@@ -79,7 +79,8 @@ class BootProcessListener implements ListenerInterface
         }
     }
 
-    protected function updateConfig(array $config){
+    protected function updateConfig(array $config)
+    {
         foreach ($config as $key => $value) {
             if (is_string($key)) {
                 $this->config->set($key, $value);
